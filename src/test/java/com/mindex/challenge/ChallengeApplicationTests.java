@@ -32,7 +32,7 @@ public class ChallengeApplicationTests {
 	@Test
 	public void lennonHasFourReports(){
 
-		reportingStructureService = new ReportingStructureServiceImpl(employeeRepository);
+		//reportingStructureService = new ReportingStructureServiceImpl(employeeRepository);
 		ReportingStructure reportingStructure =
 				reportingStructureService.read("16a596ae-edd3-4847-99fe-c4518e82c86f");
 
