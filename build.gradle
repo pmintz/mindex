@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.2.0.RELEASE'
+		springBootVersion = '2.5.0'
 	}
 	repositories {
 		mavenCentral()
@@ -26,6 +26,13 @@ repositories {
 dependencies {
 	implementation ('org.springframework.boot:spring-boot-starter-web')
 	implementation ('org.springframework.boot:spring-boot-starter-data-mongodb')
+	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
+
+
 	testImplementation ('org.springframework.boot:spring-boot-starter-test')
+	// https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine
+	testImplementation 'org.junit.vintage:junit-vintage-engine:5.9.1'
+
 	implementation (group: 'de.bwaldvogel', name: 'mongo-java-server', version: '1.25.0')
 }

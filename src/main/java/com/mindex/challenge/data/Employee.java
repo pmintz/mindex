@@ -8,7 +8,7 @@ public class Employee {
     private String lastName;
     private String position;
     private String department;
-    private List<Employee> directReports;
+    private List<DirectReports> directReports;
 
     public Employee() {
     }
@@ -53,11 +53,11 @@ public class Employee {
         this.department = department;
     }
 
-    public List<Employee> getDirectReports() {
+    public List<DirectReports> getDirectReports() {
         return directReports;
     }
 
-    public void setDirectReports(List<Employee> directReports) {
+    public void setEmployeeId(List<DirectReports> directReports) {
         this.directReports = directReports;
     }
 }
