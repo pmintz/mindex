@@ -23,10 +23,6 @@ public class MongoConfig{
 
     }
 
-  /*  @Bean
-    public MongoDbFactory mongoDbFactory(MongoClient mongoClient) {
-        return new SimpleMongoClientDbFactory(mongoClient, "test");
-    }*/
 
     @Bean(destroyMethod="shutdown")
     public MongoServer mongoServer() {

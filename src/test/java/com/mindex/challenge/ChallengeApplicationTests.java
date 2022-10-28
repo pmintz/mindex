@@ -20,8 +20,6 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-//@ContextConfiguration(classes = MongoConfig.class)
-@ExtendWith(MockitoExtension.class)
 public class ChallengeApplicationTests {
 
 	@Autowired
